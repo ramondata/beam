@@ -7,8 +7,8 @@ pipeline_options = PipelineOptions(argv=None)
 pipeline = beam.Pipeline(options=pipeline_options)
 
 
-input_file = '/Users/ramon/beam/purchase.csv'  # Replace with the actual path to your input file
-output_file = '/Users/ramon/beam/output.json'  # Replace with the desired path for the output file
+input_file = 'purchase.csv'  # Replace with the actual path to your input file
+output_file = 'output.json'  # Replace with the desired path for the output file
 
 cols = ["data", "id", "name", "value"]
 
