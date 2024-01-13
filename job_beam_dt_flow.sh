@@ -8,5 +8,6 @@ python -m apache_beam.examples.wordcount --project $DEVSHELL_PROJECT_ID \
   --runner DataflowRunner \
   --staging_location $BUCKET/staging \
   --temp_location $BUCKET/temp \
+  --template_location gs://purchase-stock-beam/templates/purchase-stock \
   --output $BUCKET/results/output \
-  --region "filled in at lab start"
+  --region <region>
