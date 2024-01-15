@@ -16,4 +16,4 @@ python -m apache_beam.examples.wordcount --project $DEVSHELL_PROJECT_ID \
 
 ##caso não tenha uma vpn default, necessita informar a url da subnet:
 python -m from_bq_to_bucket \ 
-  --subnet  https://www.googleapis.com/compute/v1/projects/cerc2-gestop-stg/regions/southamerica-east1/subnetworks/subnet-gestops-stg-02
+  --subnet  https://www.googleapis.com/compute/v1/projects/<project-name>/regions/<region-id>/subnetworks/<subnet-name>
