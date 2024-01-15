@@ -8,6 +8,6 @@ python -m apache_beam.examples.wordcount --project $DEVSHELL_PROJECT_ID \
   --runner DataflowRunner \
   --staging_location $BUCKET/staging \
   --temp_location $BUCKET/temp \
-  --template_location gs://purchase-stock-beam/templates/purchase-stock \
+  --template_location $BUCKET/templates/<name-for-your-template-file> \
   --output $BUCKET/results/output \
   --region <region>
