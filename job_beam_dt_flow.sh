@@ -5,7 +5,7 @@ EXPORT BUCKET=gs:<bucket-name>
 gsutil mb -c STANDARD -l southamerica-east1 $BUCKET
 
 
-##Caso tenha subnet default:
+##caso tenha subnet default:
 python -m apache_beam.examples.wordcount --project $DEVSHELL_PROJECT_ID \
   --runner DataflowRunner \
   --staging_location $BUCKET/staging \
